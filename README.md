@@ -4,7 +4,7 @@ Here is an Step by Step Procedure of contributing process
 
 Set up the git environment in your system
 
-Then Clone Reposiratory in VS code
+Then Clone Reposiratory in VS Code.
 
 Then If you changes it git add .
 
