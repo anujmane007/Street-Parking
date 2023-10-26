@@ -13,3 +13,5 @@ git status
 git commit -m "Your Comment"
 
 git push 
+
+Thank You Everyone
