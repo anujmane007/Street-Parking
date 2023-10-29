@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_street_parking/screens/components/admin_as_login.dart';
+//import 'package:flutter_application_street_parking/screens/components/admin_as_login.dart';
 // import 'package:flutter_application_street_parking/screens/components/Vehicle_Registration.dart';
-import 'package:flutter_application_street_parking/screens/components/vehicle_registration.dart';
 import 'package:flutter_application_street_parking/screens/components/registration_screen.dart';
 import 'package:flutter_application_street_parking/screens/components/Report_page.dart';
+import 'package:flutter_application_street_parking/screens/components/login_screen.dart';
 
 // import 'package:flutter_auth/Screens/Login/Vehicle_Registration.dart';
 // import 'package:flutter_auth/Screens/Login/login_warrior.dart';
@@ -164,7 +164,7 @@ class first_screen extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) {
-                        return Vehicle_Registration();
+                        return Login_screen();
                       },
                     ),
                   );

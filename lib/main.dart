@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/components/welcome_screen.dart';
 
+//import 'package:flutter_application_street_parking/screens/components/parking_spaces.dart';
 void main() {
   runApp(MyApp());
 }
