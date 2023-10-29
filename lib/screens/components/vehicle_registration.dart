@@ -1,19 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Vehicle_Registration extends StatefulWidget {
-  const Vehicle_Registration({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  _Vehicle_RegistrationState createState() => _Vehicle_RegistrationState();
-}
-
-class _Vehicle_RegistrationState extends State<Vehicle_Registration> {
-  String? selectedVehicleType; // A variable to store the selected vehicle type
-
+class VehicleRegistration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    String? selectedVehicleType; // A variable to store the selected vehicle type
+
     return Scaffold(
       body: Container(
         width: 430,
@@ -118,9 +109,6 @@ class _Vehicle_RegistrationState extends State<Vehicle_Registration> {
                       selectedVehicleType, // Use the selected value from the variable
                   onChanged: (String? newValue) {
                     // Handle the selection of vehicle type here
-                    setState(() {
-                      selectedVehicleType = newValue;
-                    });
                   },
                   items: <String>['Car', 'Bike']
                       .map<DropdownMenuItem<String>>((String value) {
@@ -152,12 +140,11 @@ class _Vehicle_RegistrationState extends State<Vehicle_Registration> {
                     borderRadius: BorderRadius.circular(25),
                   ),
                 ),
-                child: const TextField(
+                child: TextField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
                     hintText: 'Enter Vehicle No', // Placeholder text
-                    hintStyle:
-                        TextStyle(fontSize: 25, fontWeight: FontWeight.w800),
+                    hintStyle: TextStyle(fontSize: 25, fontWeight: FontWeight.w800),
                   ),
                 ),
               ),
@@ -177,12 +164,11 @@ class _Vehicle_RegistrationState extends State<Vehicle_Registration> {
                     borderRadius: BorderRadius.circular(25),
                   ),
                 ),
-                child: const TextField(
+                child: TextField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
                     hintText: 'Enter Vehicle Name', // Placeholder text
-                    hintStyle:
-                        TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    hintStyle: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
@@ -286,10 +272,3 @@ class _Vehicle_RegistrationState extends State<Vehicle_Registration> {
   }
 }
 
-void main() {
-  runApp(
-    MaterialApp(
-      home: Vehicle_Registration(),
-    ),
-  );
-}
