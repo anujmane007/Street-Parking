@@ -68,15 +68,15 @@ class _Report_pageState extends State<Report_page> {
               ),
             ),
             const Positioned(
-              left: 49,
+              left: 9,
               top: 28,
               child: SizedBox(
-                width: 2312,
+                width: 231,
                 height: 34,
                 child: Text(
                   'Report',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 246, 245, 245),
+                    color: Colors.white,
                     fontSize: 30,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w700,
