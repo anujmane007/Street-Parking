@@ -1,13 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_street_parking/screens/components/home_screen.dart';
-import 'package:flutter_application_street_parking/screens/components/parking_spaces.dart';
-
-// import 'package:flutter_auth/Screens/Login/login_screen.dart';
-// import 'package:flutter_auth/Screens/Login/login_warrior.dart';
-// import 'package:flutter_auth/Screens/Welcome/components/signup_citizen.dart';
-// import 'package:flutter_auth/Screens/Welcome/components/signup_warrior.dart';
-
-// import 'package:flutter_svg/flutter_svg.dart';
 
 class Login_screen extends StatelessWidget {
   const Login_screen({
