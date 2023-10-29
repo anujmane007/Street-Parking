@@ -67,11 +67,11 @@ class _Report_pageState extends State<Report_page> {
                 ),
               ),
             ),
-            const Positioned(
+             Positioned(
               left: 49,
               top: 28,
               child: SizedBox(
-                width: 2312,
+                width: 231,
                 height: 34,
                 child: Text(
                   'Report',
@@ -80,7 +80,7 @@ class _Report_pageState extends State<Report_page> {
                     fontSize: 30,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w700,
-                    // height: 1.0, // Adjust the height as needed
+                     height: 0, // Adjust the height as needed
                   ),
                 ),
               ),
@@ -89,7 +89,7 @@ class _Report_pageState extends State<Report_page> {
               left: 49,
               top: 280,
               child: SizedBox(
-                width: 2312,
+                width: 231,
                 height: 34,
                 child: Text(
                   'Invalid Parking Report',
@@ -238,7 +238,7 @@ class _Report_pageState extends State<Report_page> {
                 width: 337,
                 height: 61,
                 decoration: ShapeDecoration(
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     colors: [Color(0xFFFF6C03), Color(0xFFFFB700)],
                     // clipBehavior: Clip.antiAlias,
                   ),

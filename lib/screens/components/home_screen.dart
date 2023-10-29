@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_street_parking/screens/components/Report_page.dart';
+import 'package:flutter_application_street_parking/screens/components/Tag_Installation.dart';
+import 'package:flutter_application_street_parking/screens/components/parking_spaces.dart';
+
+import 'package:flutter_application_street_parking/screens/components/vehicle_registration.dart';
 
 class home_screen extends StatelessWidget {
   const home_screen({super.key});
@@ -277,6 +282,16 @@ class home_screen extends StatelessWidget {
             Positioned(
               left: 10,
               top: 89,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return TagInstallation();
+                      },
+                    ),
+                  );
+                },
               child: Container(
                 width: 375,
                 height: 248,
@@ -285,15 +300,8 @@ class home_screen extends StatelessWidget {
                     image: NetworkImage("assets/images/home_page_background.png"),
                     fit: BoxFit.contain,
                   ),
-                  // boxShadow: [
-                  //   BoxShadow(
-                  //     color: Color(0x3F000000),
-                  //     blurRadius: 4,
-                  //     offset: Offset(0, 4),
-                  //     spreadRadius: 0,
-                  //   )
-                  // ],
                 ),
+              ),
               ),
             ),
             Positioned(
@@ -308,7 +316,8 @@ class home_screen extends StatelessWidget {
                     fit: BoxFit.fill,
                   ),
                 ),
-              ),
+              
+              )
             ),
             Positioned(
               left: 300,
@@ -419,6 +428,16 @@ class home_screen extends StatelessWidget {
             Positioned(
               left: 50,
               top: 515,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return ParkingSpaces();
+                      },
+                    ),
+                  );
+                },
               child: SizedBox(
                 width: 241,
                 height: 76,
@@ -451,10 +470,21 @@ class home_screen extends StatelessWidget {
                   ),
                 ),
               ),
+              ),
             ),
             Positioned(
               left: 165,
               top: 640,
+               child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return VehicleRegistration();
+                      },
+                    ),
+                  );
+                },
               child: SizedBox(
                 width: 225,
                 height: 76,
@@ -486,6 +516,7 @@ class home_screen extends StatelessWidget {
                   ),
                 ),
               ),
+               ),
             ),
             Positioned(
               left: 287,
@@ -518,6 +549,16 @@ class home_screen extends StatelessWidget {
             Positioned(
               left: 47,
               top: 750,
+               child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return Report_page();
+                      },
+                    ),
+                  );
+                },
               child: SizedBox(
                 width: 318,
                 height: 77,
@@ -549,6 +590,7 @@ class home_screen extends StatelessWidget {
                   ),
                 ),
               ),
+               ),
             ),
             Positioned(
               left: 287,
