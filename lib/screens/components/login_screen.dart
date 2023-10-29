@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_street_parking/screens/components/home_screen.dart';
 
 // import 'package:flutter_auth/Screens/Login/login_screen.dart';
 // import 'package:flutter_auth/Screens/Login/login_warrior.dart';
@@ -180,6 +181,16 @@ class Login_screen extends StatelessWidget {
             Positioned(
                 left: 40,
                 top: 733,
+                child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return home_screen();
+                      },
+                    ),
+                  );
+                },
                 child: SizedBox(
                     width: 329,
                     height: 61,
@@ -194,6 +205,7 @@ class Login_screen extends StatelessWidget {
                             height: 0,
                         ),
                     ),
+                ),
                 ),
             ),
         ],
